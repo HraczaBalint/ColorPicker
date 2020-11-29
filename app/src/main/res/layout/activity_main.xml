@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/layoutMain"
+    >
+
+    <TextView
+        android:id="@+id/textViewSzin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/seekBarKek"
+        android:layout_marginHorizontal="30sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30sp"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:text="(0,0,0)"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Red: 0"
+        android:layout_marginTop="30sp"
+        android:layout_marginLeft="30sp"
+        android:textSize="30sp"
+        android:id="@+id/textViewPiros"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Green: 0"
+        android:layout_marginLeft="30sp"
+        android:layout_below="@+id/seekBarPiros"
+        android:textSize="30sp"
+        android:id="@+id/textViewZold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blue: 0"
+        android:layout_marginLeft="30sp"
+        android:layout_below="@+id/seekBarZold"
+        android:textSize="30sp"
+        android:id="@+id/textViewKek"
+        />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:layout_below="@id/textViewPiros"
+        android:max="255"
+        android:id="@+id/seekBarPiros"
+        ></SeekBar>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:layout_below="@+id/textViewZold"
+        android:max="255"
+        android:id="@+id/seekBarZold"
+        ></SeekBar>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:layout_below="@+id/textViewKek"
+        android:max="255"
+        android:id="@+id/seekBarKek"
+        ></SeekBar>
+
+
+</RelativeLayout>
